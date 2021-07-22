@@ -1,25 +1,20 @@
-﻿using System;
+﻿using Data;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Data
+namespace Models
 {
-    public enum OrderType { Buy, Sell }
-    public class Order
+    public class CreateOrder
     {
-        [Key]
-        public int OrderId { get; set; }
         [Required]
         public OrderType OrderType { get; set; }
         [Required]
-        public Stock OrderedStock { get; set; }
+        public string TickerSymbol { get; set; }
         [Required]
         public int NumberOfUnits { get; set; }
-        public bool IsFilled { get; set; }
-        [Required]
-        public Guid UserId { get; set; }
     }
 }
