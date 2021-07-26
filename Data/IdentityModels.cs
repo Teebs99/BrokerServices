@@ -36,6 +36,7 @@ namespace BrokerServices.Models
 
         public DbSet<Stock> Stocks { get; set; }
         public DbSet<Order> Orders { get; set; }
+        public DbSet<Portfolio> Portfolios { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {

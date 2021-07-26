@@ -76,9 +76,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CreateOrder.cs" />
+    <Compile Include="CreatePortfolio.cs" />
     <Compile Include="CreateStock.cs" />
     <Compile Include="OrderDetail.cs" />
     <Compile Include="OrderListItem.cs" />
+    <Compile Include="PortfolioDetail.cs" />
+    <Compile Include="PortfolioListItem.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
